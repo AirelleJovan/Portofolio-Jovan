@@ -347,39 +347,115 @@ section.certificates {
     background-color: #45a049;
 }
 
+/* Project Pipas Section */
+.project-pipas {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: var(--second-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-pipas h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project-pipas article {
+    padding: 30px;
+    line-height: 1.8;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    background: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-pipas h3 {
+    font-size: 2.6rem;
+    margin-top: 30px;
+    color: var(--main-color);
+    border-left: 6px solid var(--main-color);
+    padding-left: 15px;
+}
+
+.project-pipas p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.project-pipas ul {
+    padding-left: 30px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
+
+.project-pipas ul li {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.project-pipas ul li::marker {
+    color: var(--main-color);
+}
+
+.project-pipas a {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-pipas a:hover {
+    color: #4CAF50;
+}
+
+/* Contact Section */
 section.contact {
-    padding: 50px;
+    padding: 60px 20px;
     background-color: var(--bg-color);
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
 }
 
 section.contact .heading {
-    font-size: 3rem;
-    color: #347928;
-    margin-bottom: 20px;
+    font-size: 3.6rem;
+    color: var(--main-color);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 section.contact .heading span {
-    color: var(--main-color);
+    color: #347928;
+    font-weight: bold;
 }
 
 form {
     max-width: 800px;
     margin: 0 auto;
     background: var(--second-bg-color);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .input-group {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .input-box {
-    flex: 1;
+    flex: 1 1 calc(50% - 20px);
     display: flex;
     flex-direction: column;
 }
@@ -387,42 +463,63 @@ form {
 .input-box input {
     padding: 15px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    font-size: 1.6rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #45a049;
+    box-shadow: 0 0 10px var(--main-color);
+    outline: none;
 }
 
 .input-group-2 {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 textarea {
     width: 100%;
     padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    font-size: 1.6rem;
+    background: var(--bg-color);
+    color: var(--text-color);
     resize: none;
     height: 150px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #45a049;
+    box-shadow: 0 0 10px var(--main-color);
+    outline: none;
 }
 
 .btn {
-    padding: 15px 30px;
-    background-color: #4CAF50;
-    color: #fff;
+    padding: 15px 40px;
+    background-color: var(--main-color);
+    color: var(--text-color);
     border: none;
-    border-radius: 4px;
-    font-size: 1rem;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn:hover {
     background-color: #45a049;
+    transform: translateY(-3px);
 }
 
+/* Footer Section */
 footer.footer {
     padding: 20px;
     background-color: #333;
